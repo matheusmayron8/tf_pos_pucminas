@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "443210376775",
+    "project_id": "pucposprojects",
+    "storage_bucket": "pucposprojects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443210376775:android:6c4cebb834dafa9f583362",
+        "android_client_info": {
+          "package_name": "br.com.matheus.lima.trabalhofinalpospuc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443210376775-spqniekso3teh3i221o3q6vbtc8mdu4d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.matheus.lima.trabalhofinalpospuc",
+            "certificate_hash": "790013db67a1a0c82d4dc2462cfc7238592a0eb0"
+          }
+        },
+        {
+          "client_id": "443210376775-hf92me2rdtf86s7rpmuqmpqsnm6j7ek6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ_JctaIpWz_pUrX4LHn5G-Tzy8jB9idg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443210376775-hf92me2rdtf86s7rpmuqmpqsnm6j7ek6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

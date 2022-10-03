@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="report"
+            type="br.com.matheus.lima.trabalhofinalpospuc.domain.model.MyReport" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.fragments.home.NewReportsFragment">
+
+        <TextView
+            android:id="@+id/tv_title_report_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/text_detail"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            android:textColor="#2D3934"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_detail_report_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/text_title"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_report_detail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@{report.title}"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_detail_report_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/text_description_of_problem"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_detail_report_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@{report.description}"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_detail_report_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:hint="@string/text_cpf"
+            android:enabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_detail_report_description">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@{report.cpf}"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_detail_report_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/text_location_of_problem"
+            android:enabled="false"
+            app:layout_constraintEnd_toStartOf="@+id/btn_view_report_location"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_detail_report_cpf">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text=""/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_view_report_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_view"
+            android:textAllCaps="false"
+            android:textColor="@color/brunswick_green"
+            app:cornerRadius="50dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#18573A"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/til_detail_report_location"
+            app:layout_constraintEnd_toEndOf="@+id/til_detail_report_cpf"
+            app:layout_constraintTop_toTopOf="@+id/til_detail_report_location" />
+
+        <TextView
+            android:id="@+id/tv_detail_title_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_photos"
+            app:layout_constraintStart_toStartOf="@+id/til_detail_report_location"
+            app:layout_constraintTop_toBottomOf="@+id/til_detail_report_location" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_view_report_location"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_title_photos"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_title_photos">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_detail_first_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="@color/spanish_gray"
+                    android:background="@drawable/shape_round_outline"
+                    android:src="@drawable/ic_add_photo" />
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_detail_second_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="@color/spanish_gray"
+                    android:background="@drawable/shape_round_outline"
+                    android:src="@drawable/ic_add_photo"
+                    android:visibility="gone"/>
+
+                <Space
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_detail_third_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="1dp"
+                    app:riv_border_color="#979797"
+                    android:background="@drawable/shape_round_outline"
+                    android:src="@drawable/ic_add_photo"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_detail_view_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_view_report_location"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_title_photos"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_title_photos">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_grey_shape"/>
+
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_grey_shape"/>
+
+                <View
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/rounded_grey_shape"/>
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_back_to_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/txt_back"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

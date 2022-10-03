@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:id="@+id/iv_report_status"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_check" />
+
+        <TextView
+            android:id="@+id/tv_report_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:textSize="16sp"
+            android:textColor="#234135"
+            app:layout_constraintBottom_toTopOf="@+id/tv_report_subtitle"
+            app:layout_constraintEnd_toStartOf="@+id/iv_report_detail"
+            app:layout_constraintStart_toEndOf="@+id/iv_report_status"
+            app:layout_constraintTop_toTopOf="@+id/iv_report_status"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Encanamento rompido"/>
+
+        <TextView
+            android:id="@+id/tv_report_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="#B2B2B2"
+            android:lines="1"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_report_status"
+            app:layout_constraintEnd_toEndOf="@+id/tv_report_title"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/tv_report_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_report_title"
+            tools:text="Solicitado em: 10/04/2022 "/>
+
+        <ImageView
+            android:id="@+id/iv_report_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_report_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_report_status"
+            app:srcCompat="@drawable/ic_foward" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

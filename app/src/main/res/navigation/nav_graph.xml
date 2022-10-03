@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_onboardingFirstFragment"
+            app:destination="@id/onboardingFirstFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingFirstFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.onboarding.OnboardingFirstFragment"
+        android:label="OnboardingFirstFragment"
+        tools:layout="@layout/fragment_onboarding_first">
+        <action
+            android:id="@+id/action_onboardingFirstFragment_to_onboardingSecondFragment"
+            app:destination="@id/onboardingSecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingSecondFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.onboarding.OnboardingSecondFragment"
+        android:label="OnboardingSecondFragment"
+        tools:layout="@layout/fragment_onboarding_second">
+        <action
+            android:id="@+id/action_onboardingSecondFragment_to_onboardingThirdFragment"
+            app:destination="@id/onboardingThirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingThirdFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.onboarding.OnboardingThirdFragment"
+        android:label="OnboardingThirdFragment"
+        tools:layout="@layout/fragment_onboarding_third">
+        <action
+            android:id="@+id/action_onboardingThirdFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_showAllReportsMapFragment"
+            app:destination="@id/showAllReportsMapFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_newReportsFragment"
+            app:destination="@id/newReportsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewReportsDetailFragment"
+            app:destination="@id/viewReportsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAllReportsMapFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.ShowAllReportsMapFragment"
+        android:label="fragment_show_all_reports_map"
+        tools:layout="@layout/fragment_show_all_reports_map" />
+    <fragment
+        android:id="@+id/newReportsFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.NewReportsFragment"
+        android:label="NewReportsFragment"
+        tools:layout="@layout/fragment_new_reports">
+        <action
+            android:id="@+id/action_newReportsFragment_to_selectLocationFragment"
+            app:destination="@id/selectLocationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLocationFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.SelectLocationFragment"
+        android:label="SelectLocationFragment"
+        tools:layout="@layout/fragment_select_location"/>
+    <fragment
+        android:id="@+id/viewReportsDetailFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.ViewReportsDetailFragment"
+        android:label="ViewReportsDetailFragment"
+        tools:layout="@layout/fragment_view_reports_detail">
+        <argument
+            android:name="report"
+            app:argType="br.com.matheus.lima.trabalhofinalpospuc.domain.model.MyReport" />
+        <action
+            android:id="@+id/action_viewReportsDetailFragment_to_viewMapsFragment"
+            app:destination="@id/viewMapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewMapsFragment"
+        android:name="br.com.matheus.lima.trabalhofinalpospuc.presentation.fragments.home.ViewMapsFragment"
+        android:label="ViewMapsFragment"
+        tools:layout="@layout/fragment_view_maps">
+        <argument
+            android:name="latLng"
+            app:argType="com.google.android.gms.maps.model.LatLng" />
+    </fragment>
+
+</navigation>

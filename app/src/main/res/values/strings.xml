@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Prefeitura Municipal de Algum Lugar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Login screen -->
+    <string name="txt_terms_of_use">Ao clicar em login, você está aceitando os\n<a href="">Termos de uso</a></string>
+    <string name="url_google_tems_of_service">https://policies.google.com/terms?hl=pt-BR</string>
+    <string name="url_google_privacy_policy">https://policies.google.com/privacy?hl=pt-BR</string>
+    <string name="msg_error_login">Não foi possível realizar o login</string>
+    <string name="title_required_permissions">Permissões requeridas</string>
+    <string name="msg_required_permissions">Para iniciar uma solicitação, é necessário autorizar o acesso a sua localização.</string>
+    <string name="txt_fix">Corrigir</string>
+    <string name="txt_cancel">Cancelar</string>
+    <string name="txt_features_disabled">Algumas funcionalidades do app foram desabilitadas.</string>
+    <string name="error_to_loading_images">Não foi possível carregar a imagem.</string>
+    <string name="txt_back">Voltar</string>
+    <string name="title_photos">Fotos</string>
+    <string name="txt_view">Visualizar</string>
+    <string name="text_cpf">CPF</string>
+    <string name="text_description_of_problem">Descrição do problema</string>
+    <string name="text_title">Titulo</string>
+    <string name="text_detail">Detalhes</string>
+    <string name="text_location_of_problem">Localização do problema</string>
+    <string name="txt_solicitation">Solicitação</string>
+    <string name="text_select">Selecionar</string>
+    <string name="text_send">Enviar</string>
+    <string name="txt_please_enter_data">Por favor, preencha todos os campos!</string>
+    <string name="txt_solicitation_sent">Solicitação enviada com sucesso!</string>
+    <string name="txt_needed_select_location">Você precisa selecionar uma localização.</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
+</resources>

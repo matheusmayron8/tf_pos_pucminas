@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/circular_shape.xml" value="0.196" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/half_rounded_white_shape.xml" value="0.196" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/rounded_green_button.xml" value="0.285" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/rounded_green_secondary_button.xml" value="0.285" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/rounded_grey_shape.xml" value="0.211" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/rounded_white_shape.xml" value="0.196" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/drawable/shape_round_outline.xml" value="0.285" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_new_reports.xml" value="0.33" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_onboarding_first.xml" value="0.33" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_onboarding_second.xml" value="0.33" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_onboarding_third.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_select_location.xml" value="0.28551136363636365" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_show_all_reports_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_view_maps.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/fragment_view_reports_detail.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/item_my_reports_list.xml" value="0.33" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/layout_home_no_content.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/layout_list_my_reports.xml" value="0.3005050505050505" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/layout/shimmer_item_my_reports_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.116" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.211" />
+        <entry key="..\:/Users/matheus.lima/AndroidStudioProjects/TrabalhoFinalPosPuc/app/src/main/res/xml/file_paths.xml" value="0.15" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
