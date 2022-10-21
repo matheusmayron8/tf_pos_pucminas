@@ -22,12 +22,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrabalhoFinalPosPuc">
-        <activity
-            android:name=".OnboardingActivity"
-            android:exported="false"
-            android:label="@string/title_activity_onboarding"
-            android:theme="@style/Theme.TrabalhoFinalPosPuc" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="${MAPS_API_KEY}" />

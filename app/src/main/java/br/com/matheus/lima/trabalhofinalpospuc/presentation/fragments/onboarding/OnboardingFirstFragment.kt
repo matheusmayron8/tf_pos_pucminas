@@ -14,6 +14,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import br.com.matheus.lima.trabalhofinalpospuc.R
@@ -28,32 +29,14 @@ class OnboardingFirstFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return ComposeView(requireContext()).apply {
-            setContent {
-                OnboardingImage()
-            }
-        }
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_onboarding_first, container, false)
+        return binding.root
     }
 
-    @Preview()
-    @Composable
-    fun OnboardingImage() {
-        Row {
-            Box {
-                Image(
-                    imageVector = ImageVector.vectorResource(id = R.drawable.bg_onboarding),
-                    contentDescription = ""
-                )
-                Image(
-                    imageVector = ImageVector.vectorResource(id = R.drawable.ic_onboarding_first),
-                    contentDescription = ""
-                )
-            }
-            Text(text = "Acompanhe tudo")
-            Text(text = "Visualize de forma ráida e simples os problemas reportados na sua cidade")
-            Button(onClick = { navigateToOnboardingSecond() }) {
-                Text(text = "Avançar")
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.btFirstNext.setOnClickListener {
+            navigateToOnboardingSecond()
         }
     }
 
