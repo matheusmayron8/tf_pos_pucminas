@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.matheus.lima.trabalhofinalpospuc.base.BaseUseCase
+import br.com.matheus.lima.trabalhofinalpospuc.constants.Constants.FIREBASE_BUCKET
 import br.com.matheus.lima.trabalhofinalpospuc.domain.model.MyReport
 import br.com.matheus.lima.trabalhofinalpospuc.domain.usecase.GetAllReportsUseCase
 import br.com.matheus.lima.trabalhofinalpospuc.domain.usecase.GetReportsByUserId
@@ -77,7 +78,7 @@ class ReportsViewModel(
 
     fun uploadFile(bitmap: Bitmap): String? {
         val storage = FirebaseStorage.getInstance()
-        val bucket = "gs://pucposprojects.appspot.com"
+        val bucket = FIREBASE_BUCKET
         val storageRef = storage.getReferenceFromUrl(bucket)
 
         FirebaseAuth.getInstance().currentUser?.let { user ->
